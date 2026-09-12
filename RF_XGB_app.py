@@ -25,8 +25,8 @@ plt.rcParams['axes.unicode_minus'] = False
 @st.cache_data
 def preprocess_and_load_data():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    processed_file = os.path.join(current_dir, "C:/project/data/Manufacturing_AI_weekly_rf_final.csv")
-    raw_file = os.path.join(current_dir, "C:/project/data/Manufacturing_AI_with_product_name.csv")
+    processed_file = os.path.join(current_dir, "Manufacturing_AI_weekly_rf_final.csv")
+    raw_file = os.path.join(current_dir, "Manufacturing_AI_with_product_name.csv")
     
     if os.path.exists(processed_file):
         weekly_df = pd.read_csv(processed_file)
