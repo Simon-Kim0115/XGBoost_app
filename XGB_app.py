@@ -18,7 +18,7 @@ plt.rcParams['axes.unicode_minus'] = False
 @st.cache_data
 def preprocess_and_load_rf_data():
 
-    processed_file = "C:/project/data/Manufacturing_AI_weekly_rf_final.csv" 
+    processed_file = "Manufacturing_AI_weekly_rf_final.csv" 
     
     if os.path.exists(processed_file):
         weekly_df = pd.read_csv(processed_file)
