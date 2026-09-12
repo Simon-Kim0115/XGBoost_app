@@ -24,7 +24,7 @@ def preprocess_and_load_rf_data():
         weekly_df = pd.read_csv(processed_file)
         weekly_df['order_date'] = pd.to_datetime(weekly_df['order_date'])
     else:
-        df = pd.read_csv("C:/project/data/Manufacturing_AI_with_product_name.csv", encoding='utf-8', low_memory=False)
+        df = pd.read_csv("Manufacturing_AI_with_product_name.csv", encoding='utf-8', low_memory=False)
         
         df = df.dropna(subset=['제품코드'])
         df = df[df['제품코드'].str.strip() != '']
