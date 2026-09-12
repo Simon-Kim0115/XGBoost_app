@@ -4,4 +4,3 @@ numpy
 scikit-learn
 matplotlib
 xgboost>=1.7.0
-fonts-nanum
